@@ -1,12 +1,19 @@
 import React from "react";
 import "./styles/App.css";
+import { Routes, Route } from 'react-router-dom';
+import {Landing, Cooking, WashersDryers} from "./Containers"
+
+
 class App extends React.Component {
   state = {};
   render() {
     return (
       <>
-        <h1>New React App</h1>
-        <h2>Happy Coding</h2>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="cooking" element={<Cooking />} />
+          <Route path="washersDryers" element={<WashersDryers />} />
+        </Routes>
       </>
     );
   }
