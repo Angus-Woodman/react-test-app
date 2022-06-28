@@ -232,10 +232,10 @@ class Cooking extends Component {
         // iframe.src = "https://trail-appliances-plp-cooking.hulla-cdn.com/?hulla_origin=" + window.location.href
     
         // Option 2
-        // changeIframeSrc(iframe, `https://trail-appliances-plp.hulla-cdn.com/?hulla_origin=${window.location.href}`)
+        changeIframeSrc(iframe, `https://trail-appliances-plp-cooking.hulla-cdn.com/?hulla_origin=${window.location.href}`)
     
         // Option 3
-        iframe.contentWindow.location.replace(`https://trail-appliances-plp.hulla-cdn.com/?hulla_origin=${window.location.href}`)
+        // iframe.contentWindow.location.replace(`https://trail-appliances-plp-cooking.hulla-cdn.com/?hulla_origin=${window.location.href}`)
     
         postMessageInit(handlers)
     }
